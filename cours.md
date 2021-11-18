@@ -1,4 +1,4 @@
-# OpenCL 1.2 
+# OpenCL 3.0
 ![OpenCL](img/100px-OpenCL_Logo_RGB-1-.png)
 
  Laurent Mascarilla (et *Arnaud Revel*)<br/>
@@ -39,7 +39,7 @@
 
 ---
 
-![image](img/khronos.png)
+![image](img/2020-opencl-api-overview-1_2_1.jpg)
 
 ---
 
@@ -665,12 +665,12 @@ Remarque :  **__global** peut être remplacé par **global**, idem pour tous les
 ## Espace d’adressage par défaut
 
 - Pour améliorer la performance, on utilise autant que possible la
-  mémoire **__local** ou **__private**.
+  mémoire **__local ou __private**.
 - S’il n’y a pas de qualificatif, les paramètres des fonctions et les
   variables locales sont **__private**
 - Le qualificatif des paramètres qui sont des pointeurs doit être
   spécifié et ne peut pas être **__private**.
-- Les mémoires **__private** et **__local** ne sont pas préservées
+- Les mémoires **__private et __local** ne sont pas préservées
   à la fin de l’exécution d’un work-item.
 - La seule façon de retourner une valeur à l’hôte est via la mémoire
   **__global**.
@@ -1227,7 +1227,7 @@ Explication :
 - `sat` : saturation vers l'élément valide le plus proche (ici 0 ou 255)
 - `rte` : arrondi à l'entier le plus proche
 
-voir [mémo OpenCL 1.2](http://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf )
+voir [mémo OpenCL 3.0](https://www.khronos.org/files/opencl30-reference-guide.pdf)
 
 ---
 
@@ -1292,7 +1292,6 @@ qui est utilisé dans :
 | CL_RGBA, CL_BGRA, CL_ARGB | (r, g, b, a)        |
 | CL_INTENSITY              | (I, I, I, I)        |
 | CL_LUMINANCE              | (L, L, L, 1.0)      |
-
 *x* : seulement 3 valeurs utilisées
 
 ---
@@ -1435,11 +1434,11 @@ void write_imagei(image2d_t image, int2 coord, int4 color)
 # Références
 
 - *Khronos*: 
-https://www.khronos.org/registry/OpenCL/specs/2.2/html/OpenCL_C.html
+https://www.khronos.org/registry/OpenCL/specs/3.0-unified/html/OpenCL_C.html
 
-- *mémo OpenCL 1.2*: 
-http://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf 
+- *mémo OpenCL*:
+https://www.khronos.org/files/opencl30-reference-guide.pdf
 
-[Khronos]: https://www.khronos.org/registry/OpenCL/specs/2.2/html/OpenCL_C.html
+[Khronos]: https://www.khronos.org/registry/OpenCL/specs/3.0-unified/html/OpenCL_C.html
 
-[mémo OpenCL 1.2]: http://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf 
+[mémo OpenCL]: https://www.khronos.org/files/opencl30-reference-guide.pdf
