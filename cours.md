@@ -46,7 +46,7 @@
 ## OpenCL
 
 - OpenCL est un modèle de programmation qui exploite ce parallélisme des
-  **architectures hétérogènes** :
+  **architectures hétérogènes**
 - Il peut s’intégrer sur des **plates-formes mobiles embarquées** (téléphones, tablettes)
 - sur des **calculateurs de haute performance**.
 - Il peut également s’interfacer avec des API graphiques comme **OpenGL** pour afficher
@@ -58,6 +58,12 @@
 
 ---
 
+
+![image](img/2020-opencl-landing-page-10_2.jpg)
+
+
+---
+
 - Il existe trois grands fabricants de matériels compatibles : Intel, Nvidia et AMD/ATI.
 - OpenCL est supporté par tous les GPU Nvidia commercialisés depuis 2006.
 - Mais en 2017 : Apple choisit Metal...
@@ -65,6 +71,20 @@
 - **Futur ?**
 
 [OpenCL 3.0](https://www.khronos.org/opencl/)
+
+---
+
+## Toujours attractif
+
+![image](img/progress_github.png)
+
+
+---
+
+
+## couches sur Vulkan, DirectX, Metal
+
+![image](img/layers.jpg)
 
 
 ---
@@ -764,6 +784,10 @@ Plusieurs types de synchronisation sont possibles :
   - Lorsqu’une commande met à jour des données, en utilisant ce procédé, on s’assure que les commandes qui attendent que l’événement survienne
     disposent des objets mis à jour avant de s’exécuter.
   - La synchronisation est possible entre des files d’attente différentes.
+
+---
+
+![image](img/queue.png)
 
 ---
 
