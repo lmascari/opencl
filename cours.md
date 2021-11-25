@@ -336,7 +336,7 @@ kernel = prg.kernelname(queue,(Gx,Gy,Gz), (Lx,Ly,Lz), *args)
 ---
 
 ```python
-kernel = prg.kernelname(queue,(Gx,Gy,Gz), (Lx,Ly,Lz), *args)
+kernel = prg.kernelname(queue,(Gx,Gy,Gz), (Sx,Sy,Sz), *args)
 ```
 - **(Gx,Gy,Gz)** définit la taille globale et la dimensionnalité des données
 - **(Sx,Sy,Sz)** définit la taille locale du workgroup, si **None** il est défini par OpenCL.
